@@ -86,7 +86,7 @@ container_build(){
     fi
   fi
   # 创建容器
-  yellow "\n Create the traffmonetizer container.\n " && docker run -d --name $CONTAIN_NAME traffmonetizer/cli:$ARCH start accept --token "$TMTOKEN" >/dev/null 2>&1
+  yellow "\n Create the traffmonetizer container.\n " && docker run -d --name $CONTAIN_NAME traffmonetizer/cli_v2:$ARCH start accept --token "$TMTOKEN" >/dev/null 2>&1
 }
 
 # 安装 watchtower ，以实时同步官方最新镜像
@@ -102,7 +102,7 @@ result(){
 # 卸载
 uninstall(){
   docker rm -f $(docker ps -a | grep -E "$NAME" | awk '{print $1}')
-  docker rmi -f $(docker images | grep traffmonetizer/cli | awk '{print $3}')
+  docker rmi -f $(docker images | grep traffmonetizer/cli_v2:$ARCH | awk '{print $3}')
   green "\n Uninstall containers and images complete.\n"
   exit 0
 }
