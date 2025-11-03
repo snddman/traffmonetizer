@@ -67,9 +67,9 @@ check_exist(){
     done
   fi
   CONTAIN_NAME=$NAME$(( NUM_MAX + 1 ))
-  
+
   # 输入 traffmonetizer 的个人 token
-  [ -z $TMTOKEN ] && reading " Enter your token, something end with =, if you do not find it, open https://traffmonetizer.com/?aff=196148: " TMTOKEN
+  [ -z $TMTOKEN ] && reading " Enter your token, something end with =, if you do not find it, open https://traffmonetizer.com/?aff=1353616: " TMTOKEN
 }
 
 container_build(){
