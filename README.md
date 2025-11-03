@@ -58,19 +58,19 @@ traffmonetizer 是一种允许用户通过分享您的流量来赚钱的选项�
 ### 交互式使用方法---注册链接注册后，复制左上角的token，运行脚本，粘贴token，回车，即可开始安装。
 
 ```shell
-bash <(wget -qO- https://raw.githubusercontent.com/fscarmen/traffmonetizer/main/tm.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/snddman/traffmonetizer/main/tm.sh)
 ```
 
 ### 带 Token 安装方法
 
 ```shell
-bash <(wget -qO- https://raw.githubusercontent.com/fscarmen/traffmonetizer/main/tm.sh) -T <token>
+bash <(wget -qO- https://raw.githubusercontent.com/snddman/traffmonetizer/main/tm.sh) -T <token>
 ```
 
 ### 全部卸载
 
 ```shell
-bash <(wget -qO- https://raw.githubusercontent.com/fscarmen/traffmonetizer/main/tm.sh) -U
+bash <(wget -qO- https://raw.githubusercontent.com/snddman/traffmonetizer/main/tm.sh) -U
 ```
 
 ### 免责声明
